@@ -1,4 +1,4 @@
-# vector and map 
+// vector and map 
 #include<bits/stdc++.h>
 #include<math.h>
  
