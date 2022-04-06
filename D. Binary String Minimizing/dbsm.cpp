@@ -27,7 +27,7 @@ int main()
         cin>>n>>k;
         string s, ans;
         cin>>s;
-        queue<ll>zro;
+        queue<ll>zro;//fifo(first in first out)
         j=0;
         fr(i,n)
          if(s[i]-'0' ==0 )
