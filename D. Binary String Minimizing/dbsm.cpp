@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include<stdio.h>
+
 using namespace std;
 
 
@@ -24,28 +24,37 @@ int main()
     while(t--)
     {
         ll m,n,t,i,j,k,x,y,z,l,q,r;
-        cin>>n>>k;
-        string s, ans;
+        cin>>n>>k;//k=5
+        string s,ans;
         cin>>s;
-        queue<ll>zro;//fifo(first in first out)
+        queue<ll>zro;
         j=0;
-        fr(i,n)
-         if(s[i]-'0' ==0 )
-            zro.push(i);
-        fr(i,n)
+        fr(i,n)//11011010 //01011110
         {
-            if(zro.empty())ans+="1";
+          if(s[i]-'0'==0 )//2 5 7
+          {
+            zro.push(i);
+          }
+        }
+        fr(i,n)//i=0 // i=1 //i=2 //i=3 //i =4//i=5//i =6 //i=7
+        {
+            if(zro.empty())//no //no //no //no //no //no //no //no
+            { 
+                ans+="1" ;
+            }
             else
             {
-                ll frnt =zro.front();
-                //cout<<frnt<<endl;
-                ll need=frnt- i;
-                if(need>k)ans+="1";
+                ll frnt =zro.front();//2 // 5 // 5 //7 //7 //7 //7 //7
+                ll need=frnt- i;//2-0=2 //5-1=4 //5-2=3 //7-3=4//7-4=3//7-5=2//7-6=1//7-7=0
+                if(need>k)//(2>5)false //(4>3) true //(3>3) false  //(4>0) true//(3>0)true //(2>0)true//(1>0)true//(0>0)false
+                {
+                   ans+="1" ;         // 1                         //1         //1        // 1        // 1
+                }
                 else
                 {
-                    k-=need;
-                    ans+="0";
-                    zro.pop();
+                    k-=need;//5-2=3                //3-3=0                                                      //0-0=0
+                    ans+="0";// 0                  //0                                                          //0
+                    zro.pop();//2 out              //5 out                                                      //7 out
                 }
             }
         }
@@ -53,4 +62,6 @@ int main()
     }
     return 0;
 }
+
+
 
