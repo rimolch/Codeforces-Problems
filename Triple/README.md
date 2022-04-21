@@ -1,3 +1,3 @@
-<a href ="https://codeforces.com/contest/1669/problem/B">
+<h2><a href ="https://codeforces.com/contest/1669/problem/B">
 Triple
-</a>
+</a></h2>
