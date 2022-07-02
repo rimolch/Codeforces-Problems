@@ -14,7 +14,7 @@ int main()
         getline(cin,s);
         s=c+s;
         string tmp;
-        vector<string>v;
+        vector<string>v;//the devil in the sky
         for(auto u:s){
             if(isspace(u)){
                 v.push_back(tmp);
@@ -24,7 +24,7 @@ int main()
                 tmp+=u;
             }
         }
-        v.push_back(tmp);
+        v.push_back(tmp);//remaining string such as sky
         map<string,int>mp;
         int maxi=0;
         for(auto u:v){
