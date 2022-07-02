@@ -16,7 +16,7 @@ int main()
     sort(v.begin(),v.end());
     int ans=0;
     for(auto u:v){
-       if(u==v[k-1]){
+       if(u==v[k-1]){// u is a pair of int ,(k-1)th jhe team ta ache setar soman penalty and solved koijoner ache 
         ans++;
        }
     }
