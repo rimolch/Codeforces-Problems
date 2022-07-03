@@ -9,11 +9,11 @@
 ## Example:
 ## Input:
 ## 5
-### The devil in the sky
-### Amazon is amazon geeks for geeks is geeks for geeks
-### This is not right
+### the devil in the sky
+### amazon is amazon geeks for geeks is geeks for geeks
+### this is not right
 ### excels
-### The phenomenal one
+### the phenomenal one
 ## Output:
 ### The 2
 ### geeks 4
