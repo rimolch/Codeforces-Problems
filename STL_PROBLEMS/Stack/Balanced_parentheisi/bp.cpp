@@ -10,9 +10,6 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int n;
-    cin>>n;
-    while(n--){
         string s;
         cin>>s;
         stack<char>st;
@@ -42,6 +39,5 @@ int main()
         }
         if(done==1)cout<<"YES"<<endl;
         else cout<<"NO"<<endl;
-    }
     return 0;
 }
