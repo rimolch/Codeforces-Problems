@@ -13,7 +13,7 @@ public:
         return s1;
     }
 };
-// main 
+// main function
 #include<bits/stdc++.h>
 #define ll long long int
 using namespace std;
