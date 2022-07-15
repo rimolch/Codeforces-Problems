@@ -23,6 +23,7 @@ int main()
     for(int i=0;i<n;i++){
         if(vt[n+i]-vt[i]<x){
             done=0;
+            break;
         }
      }
      if(done)cout<<"YES"<<endl;
