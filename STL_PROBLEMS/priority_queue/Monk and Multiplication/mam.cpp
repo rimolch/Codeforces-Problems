@@ -23,6 +23,7 @@ int main()
              a3=pq.top();
             pq.pop();
             cout<<1LL*a1*a2*a3<<endl;
+            //prefix unchanged  korte hobe
             pq.push(a1);
              pq.push(a2);
               pq.push(a3);
